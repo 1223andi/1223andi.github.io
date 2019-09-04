@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
   <title></title>
@@ -14,8 +13,10 @@
     justify-content: center;
   }
   canvas {
-    border: 1px solid black;
+    border: 3px double blue;
+    border-radius: 10px;
   }
+  
   </style>
 </head>
 <body>
@@ -27,8 +28,8 @@ var grid = 16;
 var count = 0;
   
 var snake = {
-  x: 160,
-  y: 160,
+  x: 400,
+  y: 400,
   
   // snake velocity. moves one grid length every frame in either the x or y direction
   dx: grid,
@@ -86,7 +87,7 @@ function loop() {
   context.fillStyle = 'red';
   context.fillRect(apple.x, apple.y, grid-1, grid-1);
   // draw snake one cell at a time
-  context.fillStyle = 'green';
+  context.fillStyle = 'limegreen';
   snake.cells.forEach(function(cell, index) {
     
     // drawing 1 px smaller than the grid creates a grid effect in the snake body so you can see how long it is

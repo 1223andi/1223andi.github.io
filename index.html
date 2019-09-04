@@ -88,6 +88,7 @@
             width: 40%;
             padding: 20px;
             margin-top: -100px;
+        
         }
 
         .bilderd {
@@ -137,6 +138,19 @@
             font-size:18px;
             text-decoration: none;
         }
+        .btest{
+            background-color: aqua;
+            border-radius: 50px;
+            color: azure;
+            text-decoration: none;
+            border-color:cyan;
+            
+            
+        }
+        .bbtest {
+            padding-left: 20px;
+            
+        }
         
 
         @media (min-width: 600px){
@@ -184,7 +198,7 @@
             }
 
             .bilderd{
-                width: 260px;
+                width: 245px;
                 height: 120px;
                 padding-left: 0px;
             }
@@ -202,7 +216,7 @@
                 margin-right: 200px;
             }
             .bitte {
-                background-color: darkorange;
+                background-color:none ;
                 width: 600px;
                 height:220px;
                 padding-left: 20px;
@@ -218,6 +232,7 @@
                 margin-left: 0px;
                 margin-top: 0px;
                 padding-right: 20px;
+                
                 
 
 
@@ -241,7 +256,12 @@
             .zwischentext{
                 margin-top: 30px;
             }
-
+            .wdiv{
+                background-color:darkorange;
+                padding:20px;
+                color: white;
+                margin-top: -14px;
+            }
 
             
 
@@ -257,6 +277,7 @@
 </head>
 
 <body>
+    
     <div id="topbox" class="box">
         <img src="images/test.jpg" id="topimage" />
         <div id="innertopbox">
@@ -279,7 +300,9 @@
     <div class="pls">
     <div class="bitte">
     <p class="InfoKunde">Cellulars Kunden und was Cellular gemacht hat</p>
-    <div><img src="images/TUI_Cruises-Logo_RGB_1000x361px.jpg" class="bilderd">
+    <div>
+        <div class="wdiv">
+        <img src="images/TUI_Cruises-Logo_RGB_1000x361px.jpg" class="bilderd">
         <img src="images/TVSpiel.jpg" class="bilderk">
         <p class="TVTEXT">Cellular Designed und Entwickelt für TV Spielefilm seid 2007 in enger zusammen Arbeit mit
             grossem Erfolg.
@@ -292,10 +315,13 @@
         <p class="zwischentext"> Cellular hat noch viel mehr Kunden wie zum Beispiel ZDF, Budni, Unitymedia und die
             Deutschbank. Cellular arbeitet die ganze Zeit mit einem sehr Kompetenten Team an den Websites und mehr z.B.
             Alexa.</p>
+            </div>
     </div>
     </div>
     </div>
-    
+   <div class="bbtest">
+    <button class="btest"><a href="https://www.cellular.de/" class="btest"> Cellular</a></button>
+    </div>
 
 </body>
 
