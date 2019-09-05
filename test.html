@@ -2,55 +2,139 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#1e8fff" />
     <style>
         body {
             margin: 0px;
             font-family: 'Roboto';
-            background-image: url(https://graphenest.com/wp-contqent/uploads/2018/02/background-section-2-test.svg);
-            
+            background-image: url(images/)
+           
         }
-        
-        #toplbox {
+
+
+        #topbox {
             background-color: dodgerblue;
-            width: 200px;
-            height: 350px;
             padding: 20px;
-            font-size: 35px;
+            margin: 20px;
             color: white;
-            
+            font-size: 21px;
+            display: flex;
+            border-radius: 10px;
+            border-color:dodgerblue; 
         }
-        .selfi{
-            width: 45%;
-            
+
+        #innertopbox {
+            padding: 5px
         }
-        .toplboxt{
-            font-size: 16px;
+
+        #topimage {
+            width: 100px;
+            height:100Px;
+            border-radius: 10px;
+        }
+        #hoehe {
+            padding-top: 2px;
+            padding-left: 18px;
+            margin: 0px;
+            font-size: 25px;
+
+        }
+        #zweitehoehe {
+            padding-top: 5px;
+            padding-left: 29px;
+            padding-right: 80px;
+            margin-left: 0px;
+            font-size: 10px;
+            color: white;
+
+        }
+        .jetzt{
+            text-decoration: none;
             color:white;
-            margin-top: -12px;
+            padding-left: 18px;
+            padding-right: 40px;
+        }
+        .jetzt2{
+            text-decoration: none;
+            color: white;
+            padding-left: 18px;
+            padding-right: 40px;
+        }
+        .jetzt3{
+            text-decoration: none;
+            color: white;
+            padding-left: 18px;
+            padding-right: 40px;
+        }
+        #accordion div {
+            background-color: #b2ce8f;
+            height:50px;                 
+            transition: height 0.3s ease-in-out;
+            border-radius: 20px;
+                     
+        }
+
+        #accordion div:hover {
+            background-color: #1E90FF;
+            height: 140px; 		
+            border-radius: 20px;
+        }
+        .elem { 
+            transition: opacity 0.3s ease-out }
+        .bezier { 
+            float:left;
+            transition-timing-function: cubic-bezier(0.7,0.1,0.8,0.2); 
+            transition-property: margin-top;
+            transition-duration: 1.5s }
             
+
+        .bezier:hover { 
+            margin-top: -500px ;
+            color:dodgerblue;
             }
-            .selfi{
-                width:100px;
-                height:100px;
-            }
-        
+        .b11{
+            color:white;
+            font-size: 20px;
+            font-family: 'Roboto';
+        }
+
+            
+
+
+
+
     </style>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <meta charset="utf-8" /> 
 </head>
 
 <body>
- <div id="toplbox">
-    <img src="images/test.jpg" class="selfi" >
-    <p>Andreas</p>
-    <a href="https://www.stadtteilschule-oejendorf.de/" class="toplboxt" >Website meiner Schule</a>
-    <a href="google.com" class="toplboxt" >Über mich</a>
-    <a href="praktikumsb.html" class="toplboxt" >Praktkumsbericht </a>
-    <a href="index.html" class="toplboxt">Praktikums Unternehmen</a>
-    <a href="testobjekt.html" class="toplboxt">Webspiel</a>
-
-</div>
-      
+    <div id="topbox" class="box">
+        <img src="images/test.jpg" id="topimage" />
+        <div id="innertopbox">
+            <p id="hoehe">Andreas</p>
+            <a href="test.html" class="jetzt">Home</a>
+            <a href="https://www.stadtteilschule-oejendorf.de" class="jetzt2">Schule</a>
+            <a href="nothing.html" class="jetzt3">Praktikumsbericht</a>
+            <a href="index.html" class="jetzt">Praktikumsplatz</a>
+        </div>
+    </div>
+    <div id="accordion">
+        <div>
+           <div class="button" style="background: orange"></div>
+           <p class="b11"> 
+           </p>
+        </div>
+        <div>
+           <div class="button" style="background: orange"></div>
+           <p class="b22">
+               
+           </p>
+       </div>
+     …
+     </div>
+     <img src="images/rndm.png" class="bezier"></div>
+     <p>DIESER TEIL DER WEBSITE IST KOMPLETT NICHT FERTIG!!!!!!!!!!!! und in aufbau</p>
 </body>
 
 </html>
